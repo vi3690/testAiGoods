@@ -8,6 +8,8 @@ public class test1 {
         System.out.println("d");
         System.out.println("e");
         System.out.println("f");
+        System.out.println("g");
+        System.out.println("h");
 
     }
 }
