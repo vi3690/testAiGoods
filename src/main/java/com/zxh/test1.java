@@ -2,9 +2,9 @@ package main.java.com.zxh;
 
 public class test1 {
     public static void main(String[] args) {
-        System.out.println("a1");
-        System.out.println("b2");
-        System.out.println("c3");
+        System.out.println("a1111");
+        System.out.println("b2222");
+        System.out.println("c3333");
         System.out.println("b4");
         System.out.println("c5");
         System.out.println("D6");
