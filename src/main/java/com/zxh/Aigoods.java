@@ -5,5 +5,6 @@ class aigoods {
         System.out.println("aigoods1");
         System.out.println("aigoods2");
         System.out.println("aigoods3");
+        System.out.println("aigoods4");
     }
 }
