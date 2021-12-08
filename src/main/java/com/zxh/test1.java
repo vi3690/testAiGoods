@@ -17,6 +17,8 @@ public class test1 {
         System.out.println("k");
         System.out.println("l");
         System.out.println("m");
+        System.out.println("n");
+        System.out.println("0");
 
     }
 }
