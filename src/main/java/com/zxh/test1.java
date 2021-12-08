@@ -5,10 +5,10 @@ public class test1 {
         System.out.println("a1");
         System.out.println("b2");
         System.out.println("c3");
-        System.out.println("b");
-        System.out.println("c");
-        System.out.println("D");
-        System.out.println("E");
+        System.out.println("b4");
+        System.out.println("c5");
+        System.out.println("D6");
+        System.out.println("E7");
         System.out.println("f");
         System.out.println("g");
         System.out.println("h");
