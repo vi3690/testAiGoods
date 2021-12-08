@@ -12,6 +12,10 @@ public class test1 {
         System.out.println("f");
         System.out.println("g");
         System.out.println("h");
+        System.out.println("j");
+        System.out.println("k");
+        System.out.println("l");
+        System.out.println("m");
 
     }
 }
