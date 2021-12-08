@@ -9,8 +9,8 @@ public class test1 {
         System.out.println("c5");
         System.out.println("D6");
         System.out.println("E7");
-        System.out.println("f");
-        System.out.println("g");
+        System.out.println("f8");
+        System.out.println("g9");
         System.out.println("h");
         System.out.println("i");
         System.out.println("j");
