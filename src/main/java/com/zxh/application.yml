@@ -1,0 +1,43 @@
+server:
+  port: 8094
+
+spring:
+  jpa:
+    show-sql: true
+  datasource:
+    primary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://uat2.kpbyd.com:33306/taxcenter?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+      username: saas
+      password: RBO4RYYjb1co3gAMcvZI
+    secondary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://uat2.kpbyd.com:33306/aigoods?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+      username: saas
+      password: RBO4RYYjb1co3gAMcvZI
+  flyway:
+    locations: classpath:/db/migration
+    baseline-on-migrate: true
+    clean-disabled: true
+    ignore-missing-migrations: true
+
+  security:
+    oauth2:
+      resourceserver:
+        opaque-token:
+          introspection-uri: http://uat2.kpbyd.com:9091/oauth/check_token
+          token-uri: http://uat2.kpbyd.com:9091/oauth/token
+          client-id: insideService
+          client-secret: 133dcab900f0f6726556c1db2b6e64a5
+
+yunpiao:
+  api:
+    proxy: 'http://uat2.kpbyd.com:8991'
+
+redis:
+  search:
+    host: 'uat2.kpbyd.com'
+    listPort: 30379
+    index: 'spbm'
+  spbm:
+    xml: "c:/tmp/code38.xml"
