@@ -22,6 +22,12 @@ public class test1 {
         System.out.println("1");
         System.out.println("2");
         System.out.println("222222");
+               System.out.println("m");
+        System.out.println("n");
+        System.out.println("0");
+        System.out.println("1");
+        System.out.println("2");
+        System.out.println("222222");
 
     }
 }
