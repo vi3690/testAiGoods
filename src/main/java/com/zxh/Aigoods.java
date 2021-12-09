@@ -11,4 +11,7 @@ class aigoods {
         System.out.println("aigoods5g");
         System.out.println("aigoods6g");
     }
+    public void updateAuditRejectInfo() {
+        System.out.println("123445555");
+    }
 }
