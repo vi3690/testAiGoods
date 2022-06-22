@@ -12,7 +12,28 @@ public class auditServe {
         r.setEndNumber(f.zzhm);
         return r;
     }
-
+    public ApplyForm convert(Claim f) {
+        ApplyForm r = new ApplyForm();
+        r.fplxdm = f.getInvoiceType();
+        r.fpzldm = f.getInvoiceKind();
+        r.jbrxm = f.getOperator().getName();
+        r.zjlx = Integer.parseInt(f.getOperator().getCredentialsName());
+        r.zjhm = f.getOperator().getCredentialsCode();
+        r.slfs = f.getReceiveMode();
+        r.slsl = f.getQuantity();
+        r.slsm = f.getExplain();
+        r.psxx = new ApplyForm.Psxx();
+        ClaimReceiver receiver = f.getReceiver();
+        if (receiver != null) {
+            r.psxx.bz = receiver.getRemark();
+            r.psxx.gddh = receiver.getTelephone();
+            r.psxx.yddh = receiver.getMobile();
+            r.psxx.sjrdz = receiver.getAddress();
+            r.psxx.sjrxm = receiver.getName();
+            r.psxx.yb = receiver.getPostCode();
+        }
+        return r;
+    }
     @ApiOperation("撤销申领")
     @DeleteMapping("/{diskId}/{invoiceType}/{applySn}")
     @CheckTerminal
